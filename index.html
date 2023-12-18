@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Chat App CSS Illustration</title>
+  </head>
+  <body>
+    <div id="background">
+      <div id="left-bg"></div>
+      <div id="right-bg"></div>
+    </div>
+
+    <div id="contents">
+      <div id="phone-container">
+        <div id="app-background">
+          <div id="notch"></div>
+          <div id="ui-header">
+            <img src="./images/arrow_back.svg" alt="arrow_back" class="icon">
+            <img src="./images/avatar.jpg" alt="avatar" id="avatar" />
+            <div id="name-status">
+              <h2 id="subheading">Samuel Green</h2>
+              <p id="status">Available to Walk</p>
+            </div>
+            <img src="./images/more_vert.svg" alt="more_vert" class="icon">
+          </div>
+          <div id="chats">
+            <div class="chat-left">
+              <p class="message-left">
+                That sounds great. I'd be happy with that.
+              </p>
+              <p class="message-left">
+                Could you send over some pictures of your dog, please?
+              </p>
+            </div>
+            <div class="chat-right">
+              <div id="img-message-right">
+                <img src="./images/dog-image-1.jpg" alt="dog-1" class="dog" />
+                <img src="./images/dog-image-2.jpg" alt="dog-2" class="dog" />
+                <img src="./images/dog-image-3.jpg" alt="dog-3" class="dog" />
+              </div>
+              <p class="message-right">
+                Here are a few pictures. She's <br />
+                a happy girl!
+              </p>
+              <p class="message-right">Can you make it?</p>
+            </div>
+            <div class="chat-left">
+              <p class="message-left">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+            </div>
+            <div class="chat-left" id="price">
+              <div class="chat-left-price">
+                <label for="price1" class="chat-left-wrap custom-radio"
+                  ><input type="radio" name="radio" value="price1" />30 minute
+                  walk <span class="dollars">$29</span></label
+                >
+              </div>
+              <div class="chat-left-price">
+                <label for="price2" class="chat-left-wrap custom-radio"
+                  ><input type="radio" name="radio" value="price2" />1 hour walk
+                  <span class="dollars">$49</span></label
+                >
+              </div>
+            </div>
+          </div>
+          <div id="reply">
+            <input type="text" placeholder=" Type a message…" />
+            <button>
+              <img src="./images/arrow_forward.svg" alt="arrow_forward" class="icon" id="icon2">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="right-words">
+        <h1 id="main-heading">Simple booking</h1>
+        <p id="paragraph">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.facebook.com/Official.EmrysCreations">Gabe Phiri</a>.
+    </div>
+  </body>
+</html>

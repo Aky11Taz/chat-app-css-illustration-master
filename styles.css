@@ -1,0 +1,398 @@
+/* CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* CSS Reset End */
+
+/* Project CSS */
+
+/* Desktop */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#phone-container {
+  width: 14rem;
+  min-width: 14rem;
+  /* height: 24rem;
+  min-height: 24rem; */
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 5px 5px 50px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+  font-size: 0.5rem;
+  padding: 0.5rem;
+}
+
+#app-background {
+  background-color: hsl(270, 20%, 96%);
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 1.5rem;
+}
+
+#notch {
+  position: relative;
+  margin: -1rem auto;
+  border-radius: 1.5rem;
+  width: 60%;
+  height: 1.5rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+#ui-header {
+  background: linear-gradient(-90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 1.5rem 1.5rem 0.5rem 0.5rem;
+  height: 5rem;
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: -0.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.icon {
+  filter: invert();
+  width: 10%;
+  height: 0.8rem;
+}
+
+#avatar {
+  width: 10%;
+  height: auto;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+
+#name-status {
+  width: 60%;
+  margin-left: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+#right-words {
+  width: 33%;
+  margin-left: 5rem;
+}
+
+#subheading,
+#status {
+  line-height: 0.1rem;
+  font-size: 0.6rem;
+}
+
+#status {
+  color: hsl(276, 100%, 81%);
+}
+
+#chats {
+  margin-top: 0.5rem;
+}
+
+.chat-left {
+  width: 70%;
+  padding: 0.1rem;
+  text-align: left;
+}
+
+.message-left {
+  margin: 0.4rem 0;
+  background-color: hsl(0 0% 0% / 0.1);
+  padding: 0.4rem;
+  color: hsl(276, 55%, 52%);
+  border-radius: 0.6rem 0.6rem 0.6rem 0.2rem;
+}
+
+#img-message-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.dog {
+  height: 2.5rem;
+  width: auto;
+  margin-left: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.chat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.message-right {
+  margin: 0.2rem 0;
+  background-color: hsl(0, 0%, 100%);
+  padding: 0.4rem;
+  color: hsl(271, 15%, 43%);
+  border-radius: 0.6rem 0.6rem 0.2rem 0.6rem;
+}
+
+.chat-left-price {
+  background: linear-gradient(90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  margin: 0 0 0.4rem 0;
+  padding: 0.4rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.6rem 0.6rem 0.6rem 0.2rem;
+}
+
+.chat-left-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dollars {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.custom-radio {
+  position: relative;
+  padding-left: 1.2rem;
+  cursor: pointer;
+}
+
+.custom-radio::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid hsl(289, 100%, 72%);
+  border-radius: 50%;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+button {
+  position: relative;
+  border: none;
+  background-color: hsl(271, 36%, 24%);
+  padding: 0rem 0.4rem;
+  margin-left: 86%;
+  top: -1.6rem;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#reply {
+  margin-bottom: -1.3rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#icon2 {
+  width: 1rem;
+  height: 1rem;
+}
+
+#main-heading {
+  color: hsl(271, 36%, 24%);
+}
+
+#paragraph {
+  color: hsl(270, 7%, 64%);
+}
+
+input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+#background {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#left-bg {
+  background: linear-gradient(
+    -180deg,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  position: fixed;
+  z-index: -1;
+  margin-top: -4rem;
+  margin-left: -50rem;
+  width: 40%;
+  height: 95%;
+  border-radius: 0 0 50% 50%;
+}
+
+#right-bg {
+  background-color: hsl(206 6% 79% / 0.2);
+  position: fixed;
+  margin-left: 20rem;
+  z-index: -1;
+  width: 40%;
+  height: 95%;
+  border-radius: 50% 50% 0 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  #contents {
+    display: flex;
+    flex-direction: column;
+  }
+  #right-words {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  #left-bg {
+    background: linear-gradient(
+      -180deg,
+      hsl(293, 100%, 63%),
+      hsl(264, 100%, 61%)
+    );
+    position: fixed;
+    z-index: -1;
+    margin-top: -4rem;
+    margin-left: -20rem;
+    width: 50%;
+    height: 30rem;
+    border-radius: 0 0 30rem 30rem;
+  }
+  
+  #right-bg {
+    background-color: hsl(206 6% 79% / 0.2);
+    position: fixed;
+    margin-left: 4rem;
+    margin-top: 20rem;
+    z-index: -1;
+    width: 50%;
+    height: 30rem;
+    border-radius: 30rem 30rem 0 0;
+  }
+}
+
+/* Attribution */
+.attribution {
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
