@@ -102,7 +102,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -349,6 +350,8 @@ input::placeholder {
 
   body {
     overflow-y: scroll;
+    height: 100%;
+    width: fit-content;
   }
 
   #contents {
@@ -377,7 +380,6 @@ input::placeholder {
 /* Attribution */
 .attribution {
   text-align: center;
-  margin-top: 2rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
